@@ -1,28 +1,39 @@
+// Paleta semántica de CineApp — "sala a oscuras con un foco".
+// Usa siempre estos tokens en los componentes; nunca hex sueltos.
 export const colors = {
-  background: '#0d111b',
-  surface: '#161c2e',
-  surfaceLight: '#212940',
-  surfaceBorder: '#2d3752',
+  // Superficies
+  background: '#0A0A12',
+  surface: '#15151F',
+  surfaceRaised: '#1F1F2C',
+  border: '#2A2A3A',
+  scrim: 'rgba(5, 5, 10, 0.72)',
 
-  primary: '#e50914', // Rojo cine
-  primaryHover: '#b80710',
-  secondary: '#f59e0b', // Dorado VIP
-  accent: '#38bdf8', // Azul neón
+  // Texto (contraste ≥ 4.5:1 sobre background y surface)
+  textPrimary: '#F8FAFC',
+  textSecondary: '#A1A1B5',
+  textMuted: '#8B8BA0',
 
-  textPrimary: '#ffffff',
-  textSecondary: '#94a3b8',
-  textMuted: '#64748b',
+  // Acción principal (CTA, selección)
+  accent: '#F5B301',
+  accentPressed: '#D99E00',
+  onAccent: '#0F0F17',
 
-  seatAvailable: '#334155',
-  seatAvailableBorder: '#475569',
-  seatSelected: '#22c55e',
-  seatOccupied: '#ef4444',
-  seatVip: '#eab308',
+  // Marca (logo, etiqueta "Estreno")
+  brand: '#E50914',
+  onBrand: '#FFFFFF',
 
-  badgeCategory: '#3b82f6',
-  badgeDirector: '#8b5cf6',
-  badgeDuration: '#10b981',
+  // Estados (siempre acompañados de ícono o texto)
+  success: '#22C55E',
+  warning: '#EAB308',
+  danger: '#EF4444',
 
-  screenGlow: 'rgba(56, 189, 248, 0.35)',
+  // Asientos (la fase 5 añadirá formas además de color)
+  seatAvailable: '#2A2A3A',
+  seatAvailableBorder: '#3D3D52',
+  seatSelected: '#F5B301',
+  seatOccupied: '#1A1A24',
+  seatVip: '#F5B301',
+
+  screenGlow: 'rgba(245, 179, 1, 0.35)',
   shadow: '#000000',
 };
