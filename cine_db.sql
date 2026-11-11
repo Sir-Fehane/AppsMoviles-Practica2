@@ -33,23 +33,22 @@ CREATE TABLE IF NOT EXISTS Peliculas (
 ) ENGINE=InnoDB;
 
 -- Datos iniciales de prueba
-INSERT INTO Directores (Director) VALUES 
-('Christopher Nolan'),
-('Quentin Tarantino'),
-('Hayao Miyazaki'),
-('Guillermo del Toro'),
-('Denis Villeneuve');
+INSERT INTO Directores (IDDirector, Director) VALUES 
+(1, 'Christopher Nolan'),
+(2, 'Anthony y Joe Russo'),
+(3, 'Mike Flanagan'),
+(4, 'Guillermo del Toro');
 
-INSERT INTO Categorias (Categoria) VALUES 
-('Ciencia Ficción'),
-('Crimen / Drama'),
-('Animación / Fantasía'),
-('Fantasía Oscura'),
-('Acción / Aventura');
+INSERT INTO Categorias (Identificador, Categoria) VALUES 
+(1, 'Ciencia Ficción'),
+(2, 'Acción / Superhéroes'),
+(3, 'Suspenso / Terror'),
+(4, 'Drama Histórico / Biografía'),
+(5, 'Fantasía Oscura');
 
-INSERT INTO Peliculas (Titulo, IDDirector, Duracion, IDCategoria, Sinopsis) VALUES 
-('Interstellar: Interestelar', 1, 169, 1, 'Un grupo de científicos y exploradores espaciales viajan a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad.'),
-('Pulp Fiction: Tiempos Violentos', 2, 154, 2, 'Las vidas de mafiosos, un boxeador y bandidos se entrelazan en historias de violencia y redención en Los Ángeles.'),
-('El Viaje de Chihiro', 3, 125, 3, 'Chihiro queda atrapada en un mundo mágico habitado por espíritus luego de que sus padres son transformados en cerdos.'),
-('El Laberinto del Fauno', 4, 119, 4, 'En la España de 1944, la joven Ofelia se adentra en un misterioso laberinto guiada por un fauno que le asegura ser una princesa.'),
-('Dune: Parte Dos', 5, 166, 1, 'Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia.');
+INSERT INTO Peliculas (Identificador, Titulo, IDDirector, Duracion, IDCategoria, Sinopsis) VALUES 
+(1, 'Interstellar: Interestelar', 1, 169, 1, 'Un grupo de científicos y exploradores espaciales viajan a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad ante la extinción de la Tierra.'),
+(2, 'Avengers Doomsday', 2, 180, 2, 'Los héroes de la Tierra y el multiverso deberán reunirse para confrontar la mayor amenaza existencial ante la llegada del temible Doctor Doom.'),
+(3, 'Clayface', 3, 135, 3, 'La oscura y trágica transformación de un actor de Gotham que, tras un accidente con sustancias experimentales, adquiere la capacidad de moldear su cuerpo a voluntad sembrando el terror.'),
+(4, 'Oppenheimer', 1, 180, 4, 'La vida del físico teórico J. Robert Oppenheimer al frente del Proyecto Manhattan y los dilemas morales tras la creación de la primera bomba atómica.'),
+(5, 'El laberinto del fauno', 4, 119, 5, 'En la España de 1944, la joven Ofelia descubre un laberinto en ruinas donde un misterioso fauno le revela que ella es en realidad la princesa perdida de un reino subterráneo.');
